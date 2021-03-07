@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>880079891574-8h00teo7hg1n56a63gtpvjth00p88jfn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.880079891574-8h00teo7hg1n56a63gtpvjth00p88jfn</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCDPNhUL2VZNUucMiXJlElfwdhHXSzbUBw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>880079891574</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mrdunacdtm-gmail.com.FirePrefect</string>
+	<key>PROJECT_ID</key>
+	<string>fireperfect-bf13c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fireperfect-bf13c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:880079891574:ios:12c423a2783f497d3ac357</string>
+</dict>
+</plist>
