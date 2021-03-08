@@ -1,9 +1,4 @@
-//
-//  StarterScreen.swift
-//  FirePrefect
-//
-//  Created by kim jong moon on 07/03/2021.
-//
+//Otabek Tuychiev ^_^
 
 import SwiftUI
 

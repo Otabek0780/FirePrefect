@@ -28,6 +28,13 @@
 		5F10EB1325F48B2800E80781 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5F10EB1225F48B2800E80781 /* FirebaseAuth */; };
 		5F10EB1525F48B2800E80781 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5F10EB1425F48B2800E80781 /* FirebaseStorageSwift-Beta */; };
 		5F10EB1725F48B2800E80781 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 5F10EB1625F48B2800E80781 /* FirebaseDatabase */; };
+		5F10EB1C25F4F54800E80781 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB1B25F4F54800E80781 /* Post.swift */; };
+		5F10EB2125F4F59E00E80781 /* RealtimeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB2025F4F59E00E80781 /* RealtimeStore.swift */; };
+		5F10EB2625F4F7D300E80781 /* Add_Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB2525F4F7D300E80781 /* Add_Screen.swift */; };
+		5F10EB3725F5048500E80781 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB3625F5048500E80781 /* PostCell.swift */; };
+		5F10EB5C25F62FA000E80781 /* StorageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB5B25F62FA000E80781 /* StorageStore.swift */; };
+		5F10EB6225F6365D00E80781 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F10EB6125F6365D00E80781 /* ImagePicker.swift */; };
+		5F10EB6B25F6463100E80781 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5F10EB6A25F6463100E80781 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,12 @@
 		5F10EAF625F4877500E80781 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5F10EAFE25F4878E00E80781 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		5F10EB0325F488C000E80781 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F10EB1B25F4F54800E80781 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		5F10EB2025F4F59E00E80781 /* RealtimeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeStore.swift; sourceTree = "<group>"; };
+		5F10EB2525F4F7D300E80781 /* Add_Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_Screen.swift; sourceTree = "<group>"; };
+		5F10EB3625F5048500E80781 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5F10EB5B25F62FA000E80781 /* StorageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageStore.swift; sourceTree = "<group>"; };
+		5F10EB6125F6365D00E80781 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F10EB6B25F6463100E80781 /* SDWebImageSwiftUI in Frameworks */,
 				5F10EB1725F48B2800E80781 /* FirebaseDatabase in Frameworks */,
 				5F10EB1525F48B2800E80781 /* FirebaseStorageSwift-Beta in Frameworks */,
 				5F10EB0D25F48B2800E80781 /* FirebaseAnalytics in Frameworks */,
@@ -126,8 +140,10 @@
 			isa = PBXGroup;
 			children = (
 				5F10EADB25F486A200E80781 /* apputils */,
-				5F10EAD725F4868800E80781 /* networking */,
+				5F10EB6025F6353B00E80781 /* assistants */,
+				5F10EB2A25F5037D00E80781 /* cell */,
 				5F10EAD625F4868600E80781 /* models */,
+				5F10EAD725F4868800E80781 /* networking */,
 				5F10EAD525F4868300E80781 /* screens */,
 				5F10EA9F25F4867200E80781 /* AppDelegate.swift */,
 				5F10EAA125F4867200E80781 /* SceneDelegate.swift */,
@@ -171,6 +187,7 @@
 				5F10EADC25F486C300E80781 /* HomeScreen.swift */,
 				5F10EAE425F486DF00E80781 /* SignIn_Screen.swift */,
 				5F10EAE925F486F000E80781 /* SignUp_Screen.swift */,
+				5F10EB2525F4F7D300E80781 /* Add_Screen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -179,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5F10EAF625F4877500E80781 /* User.swift */,
+				5F10EB1B25F4F54800E80781 /* Post.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -187,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				5F10EAFE25F4878E00E80781 /* SessionStore.swift */,
+				5F10EB2025F4F59E00E80781 /* RealtimeStore.swift */,
+				5F10EB5B25F62FA000E80781 /* StorageStore.swift */,
 			);
 			path = networking;
 			sourceTree = "<group>";
@@ -199,6 +219,22 @@
 				5F10EAA525F4867200E80781 /* FirePrefect.xcdatamodeld */,
 			);
 			path = apputils;
+			sourceTree = "<group>";
+		};
+		5F10EB2A25F5037D00E80781 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				5F10EB3625F5048500E80781 /* PostCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		5F10EB6025F6353B00E80781 /* assistants */ = {
+			isa = PBXGroup;
+			children = (
+				5F10EB6125F6365D00E80781 /* ImagePicker.swift */,
+			);
+			path = assistants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +260,7 @@
 				5F10EB1225F48B2800E80781 /* FirebaseAuth */,
 				5F10EB1425F48B2800E80781 /* FirebaseStorageSwift-Beta */,
 				5F10EB1625F48B2800E80781 /* FirebaseDatabase */,
+				5F10EB6A25F6463100E80781 /* SDWebImageSwiftUI */,
 			);
 			productName = FirePrefect;
 			productReference = 5F10EA9C25F4867200E80781 /* FirePrefect.app */;
@@ -298,6 +335,7 @@
 			mainGroup = 5F10EA9325F4867100E80781;
 			packageReferences = (
 				5F10EB0B25F48B2800E80781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5F10EB6925F6463100E80781 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 5F10EA9D25F4867200E80781 /* Products */;
 			projectDirPath = "";
@@ -345,13 +383,19 @@
 			files = (
 				5F10EAA025F4867200E80781 /* AppDelegate.swift in Sources */,
 				5F10EAE525F486DF00E80781 /* SignIn_Screen.swift in Sources */,
+				5F10EB3725F5048500E80781 /* PostCell.swift in Sources */,
+				5F10EB5C25F62FA000E80781 /* StorageStore.swift in Sources */,
 				5F10EAF225F4873200E80781 /* StarterScreen.swift in Sources */,
 				5F10EADD25F486C300E80781 /* HomeScreen.swift in Sources */,
+				5F10EB2125F4F59E00E80781 /* RealtimeStore.swift in Sources */,
 				5F10EAF725F4877500E80781 /* User.swift in Sources */,
 				5F10EAFF25F4878E00E80781 /* SessionStore.swift in Sources */,
+				5F10EB2625F4F7D300E80781 /* Add_Screen.swift in Sources */,
 				5F10EAA225F4867200E80781 /* SceneDelegate.swift in Sources */,
 				5F10EAEA25F486F000E80781 /* SignUp_Screen.swift in Sources */,
+				5F10EB6225F6365D00E80781 /* ImagePicker.swift in Sources */,
 				5F10EAA725F4867200E80781 /* FirePrefect.xcdatamodeld in Sources */,
+				5F10EB1C25F4F54800E80781 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -684,6 +728,14 @@
 				minimumVersion = 7.7.0;
 			};
 		};
+		5F10EB6925F6463100E80781 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -716,6 +768,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5F10EB0B25F48B2800E80781 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseDatabase;
+		};
+		5F10EB6A25F6463100E80781 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F10EB6925F6463100E80781 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 

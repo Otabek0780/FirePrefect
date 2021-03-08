@@ -1,15 +1,13 @@
-//
-//  HomeScreen.swift
-//  FirePrefect
-//
-//  Created by kim jong moon on 07/03/2021.
-//
+
 
 import SwiftUI
+import Firebase
+
 
 struct HomeScreen: View {
     
     @EnvironmentObject var session: SessionStore
+    @ObservedObject var database = RealtimeStore()
     @State var isLoading = false
     
     func doSignOut() {
@@ -19,29 +17,53 @@ struct HomeScreen: View {
             session.listen()
         }
     }
+    func apiPost() {
+        isLoading = true
+        database.loadPosts {
+            isLoading = false
+        }
+    }
+    
     
     var body: some View {
         
         NavigationView {
+            
             ZStack{
-                if session.session != nil {
-                    Text(session.session!.email!)
-                }
+                LinearGradient(gradient: Gradient(colors: [Color.yellow, Color.red]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .edgesIgnoringSafeArea(.all)
+                List{
+                    ForEach(database.items, id: \.self){ item in
+                        PostCell(post: item)
+                        
+                    }
+                }.listStyle(PlainListStyle())
+                
                 if isLoading {
                     ProgressView()
                 }
             }
             .navigationBarItems(trailing:
                                     HStack{
-                                        Image(systemName: "applelogo")
+                                        NavigationLink(
+                                            destination: Add_Screen(),
+                                            label: {
+                                                Image(systemName: "plus")
+                                            })
+                                            .foregroundColor(.purple)
+            
                                         Button(action: {
                                             doSignOut()
                                         }, label: {
                                             Image(systemName: "trash")
                                         })
+                                        .foregroundColor(.purple)
                                     }
             )
-            .navigationBarTitle("Posts", displayMode: .inline)
+            .navigationBarTitle("Contacts", displayMode: .inline)
+            
+        }.onAppear{
+            apiPost()
         }
         
     }
